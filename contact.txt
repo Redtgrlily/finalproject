@@ -5,11 +5,9 @@ Git handle: redtgrlily
 phone: 512-412-1689
 Hours free: after 5 pm weekdays and anytime on the weekends outside of class
 
-Alfredo Rojas
-Ut Coding Bootcamp
-bcihaveto@gmail.com
-git handle: bcihaveto
-phone: 512-363-3496
-Hours free: evenings and weekends
-
-
+Thomas Honeywill
+UT Coding Bootcamp
+thoneywill3@gmail.com
+Git handle: thoneywill3
+Phone: 281-229-0365
+Hours free: after 6 pm weekdays and generally available on the weekends
