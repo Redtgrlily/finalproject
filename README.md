@@ -1,4 +1,4 @@
-# finalproject
+# Final Project
 
 
 Project members:
