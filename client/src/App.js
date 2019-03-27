@@ -1,24 +1,44 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Books} />
-          <Route exact path="/books" component={Books} />
-          <Route exact path="/books/:id" component={Detail} />
-          <Route component={NoMatch} />
-        </Switch>
-      </div>
-    </Router>
-  );
+import Navbar from './components/layout/Navbar';
+import Home from './components/pages/Home';
+import Staff from './components/pages/Staff';
+import Login from './components/auth/Login';
+
+import './App.css';
+
+function onAuthRequired({ history }) {
+  history.push('/login');
+}
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Security issuer='https://dev-794098.okta.com/ouath2/default'
+                  client_id='0oad3z61aNNdrnwyg356'
+                  redirect_uri={window.location.origin + '/implicit/callback'}
+                  onAuthRequired={onAuthRequired} >
+         <div className="App">
+            <Navbar />
+            <div className="container">
+              <Route path="/" exact={true} component={Home} />
+              <SecureRoute path="/staff" exact={true} component={Staff} />
+              <Route
+                path="/login"
+                render={() => (
+                  <Login baseUrl="https://dev-794098.okta.com" />
+                )}
+              />
+              <Route path="/implicit/callback" component={ImplicitCallback} />
+            </div>
+          </div>
+        </Security>
+      </Router>
+    );
+  }
 }
 
 export default App;
