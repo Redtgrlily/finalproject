@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withAuth } from '@okta/okta-react';
 
+export default withAuth(
   class Home extends Component {
     state = { authenticated: null };
 
@@ -61,5 +62,4 @@ import { withAuth } from '@okta/okta-react';
       );
     }
   }
-
- export default Home;
+);
