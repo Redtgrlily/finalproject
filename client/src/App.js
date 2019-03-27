@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
 
 import Navbar from './components/layout/Navbar';
-import Home from './components/pages/Home';
-import Staff from './components/pages/Staff';
+import Home from './pages/Home';
+import Staff from './pages/Staff';
 import Login from './components/auth/Login';
 
 import './App.css';
