@@ -7,7 +7,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            Cool Couriers
+            Coolhands Couriers
           </Link>
           <button
             className="navbar-toggler"
@@ -25,10 +25,21 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/delivery">
-                  
+                <Link className="nav-link" to="/accountsettings">
+                  Account Settings
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/pastorders">
+                  View Order History
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  Log Out
+                </Link>
+              </li>
+              
             </ul>
           </div>
         </div>
