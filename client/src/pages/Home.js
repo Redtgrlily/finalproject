@@ -44,19 +44,14 @@ export default withAuth(
         </div>
       ) : (
         <div>
-          <p className="lead">
-            If you are a staff member, please get your credentials from your
-            supervisor
-          </p>
-          <button className="btn btn-dark btn-lg" onClick={this.login}>
-            Login
-          </button>
+
+
         </div>
       );
 
       return (
         <div className="jumbotron">
-          <h1 className="display-4">Acme Staff Portal</h1>
+          
           {mainContent}
         </div>
       );
