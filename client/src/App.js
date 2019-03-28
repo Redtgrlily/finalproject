@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Facebook from './components/Facebook';
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
 
 import Navbar from './components/layout/Navbar';
@@ -25,6 +26,7 @@ class App extends Component {
                   onAuthRequired={onAuthRequired} >
          <div className="App">
             <Navbar />
+            <Facebook />
             <div className="container">
               <Route path="/" exact={true} component={Home} />
               <SecureRoute path="/staff" exact={true} component={Staff} />
@@ -33,6 +35,7 @@ class App extends Component {
                 render={() => (
                   <Login baseUrl="https://dev-794098.okta.com" />
                 )}
+                
               />
               <Route path="/implicit/callback" component={ImplicitCallback} />
             </div>
