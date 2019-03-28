@@ -5,6 +5,8 @@ import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
 import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
 import Staff from './pages/Staff';
+import PastOrders from './pages/PastOrders';
+import AccountSettings from './pages/AccountSettings';
 import Login from './components/auth/Login';
 
 import './App.css';
