@@ -39,7 +39,12 @@ class Navbar extends Component {
                   Log Out
                 </Link>
               </li>
-              
+              <li className="nav-item">
+                <Link className="nav-link" to="/staff">
+                  Staff Login
+                </Link>
+              </li>
+
             </ul>
           </div>
         </div>
