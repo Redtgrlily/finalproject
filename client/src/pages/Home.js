@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withAuth } from '@okta/okta-react';
@@ -51,8 +52,6 @@ export default withAuth(
 
       return (
         <div className="jumbotron">
-          
-          {mainContent}
         </div>
       );
     }

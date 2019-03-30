@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
@@ -8,7 +9,7 @@ import Staff from './pages/Staff';
 import PastOrders from './pages/PastOrders';
 import AccountSettings from './pages/AccountSettings';
 import Login from './components/auth/Login';
-
+import Landing from './components/layout/landing';
 import './App.css';
 
 function onAuthRequired({ history }) {
