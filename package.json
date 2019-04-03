@@ -1,0 +1,42 @@
+{
+  "name": "coolcouriersrjs",
+  "version": "1.0.0",
+  "description": "+ [Live Demo]([insert heroku link here])",
+  "main": "server.js",
+  "dependencies": {
+    "antd": "^3.16.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mailer": "^0.6.7",
+    "material-ui": "^0.20.2",
+    "materialize": "^1.0.0",
+    "mongoose": "^5.4.21",
+    "mongoose-type-url": "^1.0.5",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-dom": "^16.8.6",
+    "react-dynamic-forms": "^1.0.3",
+    "react-redux": "^6.0.1",
+    "react-stack-grid": "^0.7.1",
+    "react-tap-event-plugin": "^3.0.3",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redtgrlily/finalproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redtgrlily/finalproject/issues"
+  },
+  "homepage": "https://github.com/Redtgrlily/finalproject#readme"
+}
